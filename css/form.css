@@ -1,0 +1,109 @@
+/*------------------------------------------Phần fomr contact----------------------*/
+
+#form_ct h2 {
+    color: rgb(175, 49, 87);
+    font-weight: bolder;
+    font-family: Dancing Script;
+}
+
+#form_ct label {
+    font-size: 130%;
+    float: left;
+    margin-right: 2em;
+    color: rgb(175, 49, 87);
+    font-family: Dancing Script;
+}
+
+
+/*------------------------------------------Phần fomr order----------------------*/
+
+.form_od h2 {
+    color: rgb(175, 49, 87);
+    font-weight: bolder;
+    font-family: Dancing Script;
+}
+
+.form_od label {
+    font-size: 130%;
+    float: left;
+    margin-right: 2em;
+    color: rgb(175, 49, 87);
+    font-family: Dancing Script;
+}
+
+
+/*-------------------------Khối check box-------------------------*/
+
+.check_box {
+    overflow: hidden;
+}
+
+.check_box div {
+    width: 60%;
+    float: right;
+}
+
+.check_box>label {
+    width: 35%;
+    margin-top: 5%;
+    display: inline-block;
+}
+
+.lable_od {
+    width: 30%;
+    float: left;
+}
+
+
+/*-------------------------Phím submit-------------------------*/
+
+
+/*--------------------------------------------*/
+
+#demoBlock {
+    background-color: rgb(240, 240, 238);
+    background-image: url("/images/demo.png");
+    background-size: cover;
+    border: solid;
+    text-align: center;
+    margin: 0 auto;
+    width: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#demo {
+    font-family: 'Dancing Script';
+    font-size: 250%;
+    margin: 35% 50% 55% 28%;
+    width: 45%;
+    overflow: hidden;
+}
+
+.demo_coc {
+    display: none;
+}
+
+
+/*-------------------------------Các chỉnh sửa khác-------------------------------------------*/
+
+#od_thongBao1,
+#od_thongBao2,
+#od_thongBao3,
+#od_thongBao4,
+#od_thongBao5,
+#ct_thongBao1,
+#ct_thongBao2,
+#ct_thongBao3,
+#ct_thongBao4 {
+    display: none;
+    font-size: 60%;
+    color: red;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+@media screen and (min-width: 800px) {
+    .demo_coc {
+        display: block;
+    }
+}

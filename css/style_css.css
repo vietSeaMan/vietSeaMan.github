@@ -1,0 +1,273 @@
+body {
+    background-color: rgb(94, 93, 93);
+    padding: 0 1% 0 1%;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    font-size: 18px;
+}
+
+h1 {
+    font-size: 3rem;
+    color: rgb(253, 253, 253);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-size: 1.25rem;
+}
+
+h6 {
+    font-size: 1rem;
+}
+
+header,
+footer {
+    background-color: rgb(29, 92, 50);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    clear: both;
+}
+
+main,
+aside {
+    background-color: white;
+}
+
+
+/*--------------------------------------Phần Menu-----------*/
+
+#main_menu>ul {
+    list-style: none;
+    text-align: center;
+    background-color: rgb(68, 68, 68);
+}
+
+#main_menu ul li {
+    display: inline-block;
+    background-color: rgb(68, 68, 68);
+    padding: 5px 20px 5px 20px;
+    margin: 5px 0 0 0;
+    transition: .5s;
+    overflow: hidden;
+}
+
+#main_menu a {
+    color: white;
+    font-size: 130%;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-spacing: 0;
+}
+
+#main_menu li:hover {
+    background-color: rgb(8, 119, 108);
+}
+
+#main_menu {
+    display: none;
+}
+
+
+/*------------------------------Phần header-------------------------*/
+
+#khung_tieu_de {
+    overflow: hidden;
+    clear: both;
+    margin-bottom: 5%;
+}
+
+#khung_tieu_de p {
+    text-align: center;
+    font-size: 150%;
+    font-family: 'Dancing Script', cursive;
+}
+
+#khung_tieu_de img {
+    display: none;
+}
+
+.header_content {
+    text-align: center;
+}
+
+
+/* --------------------------------------------------Phần sidebar-----------------------------*/
+
+.conten_sidebar {
+    font-size: 120%;
+    background-color: rgb(255, 255, 255);
+    margin: 2% 0 1% 0;
+    padding: 0.5% 2% 2% 4%;
+}
+
+.conten_sidebar a {
+    display: block;
+    color: white;
+    background-color: rgb(8, 119, 108);
+    font-size: 100%;
+    font-variant: small-caps;
+    text-decoration: none;
+    overflow: hidden;
+    padding: 7px 20px 7px 20px;
+    margin: 0;
+}
+
+.content {
+    background-color: rgb(255, 255, 255);
+    padding: 0 2% 2% 2%;
+    margin: 10px 1% 1% 1%;
+    /* Top right Bot left */
+}
+
+
+/*---------------------------------------cho homepage-------------*/
+
+.readmore_homepage a {
+    display: block;
+    color: white;
+    background-color: rgb(8, 119, 108);
+    font-size: 100%;
+    font-variant: small-caps;
+    text-decoration: none;
+    overflow: hidden;
+    padding: 5px 20px 5px 20px;
+    margin: 0;
+    transition: .5s;
+}
+
+.readmore_homepage a:hover {
+    background-color: rgb(2, 151, 136);
+}
+
+footer img {
+    display: none;
+}
+
+header img {
+    width: 100%;
+}
+
+footer {
+    font-style: oblique;
+    width: 100%;
+    clear: both;
+    overflow: hidden;
+    color: white;
+}
+
+footer p {
+    color: white;
+    font-weight: bold;
+    margin: 10px 10px 10px 50px;
+    display: block;
+}
+
+
+/*--------------------------------------------------------------------------------------------------------Phần nội dung khi màn hình hơn 480px và nho-----*/
+
+@media screen and (min-width: 570px) {
+    main,
+    aside {
+        width: 100%;
+    }
+    #khung_tieu_de img {
+        width: 40%;
+        display: block;
+        margin: auto;
+    }
+    footer {
+        background-image: url("/images/anh-bia.jpg");
+    }
+}
+
+
+/*---------------------------------------------------------------------------------------------------------------------Phần nội dung khi màn hình hơn 768px*/
+
+@media screen and (min-width: 1025px) {
+    /* --------------------------------------------------Phần Header-----------------------------*/
+    header {
+        text-align: center;
+        border: thick;
+    }
+    #khung_tieu_de {
+        width: 70%;
+        margin: 0 auto;
+    }
+    #noi_dung_tieu_de {
+        width: 70%;
+        font-size: 200%;
+        margin: auto;
+    }
+    #khung_tieu_de img {
+        width: 15%;
+        float: left;
+    }
+    .header_content {
+        font-size: 120%;
+        text-align: center;
+        width: 70%;
+        float: left;
+        clear: both;
+        margin: 10px 1% 1% 9%;
+    }
+    /* --------------------------------------------------Phần menu-----------------------------*/
+    #main_menu {
+        display: block;
+    }
+    /*------------Phần memu mở rộng---------------*/
+    #main_menu li ul {
+        position: absolute;
+        width: inherit;
+        display: none;
+        transition: .5s;
+    }
+    #main_menu li:hover ul {
+        display: block;
+    }
+    #main_menu li ul li {
+        display: block;
+        border: none;
+    }
+    /* --------------------------------------------------Phần sidebar-----------------------------*/
+    aside {
+        width: 29%;
+        float: right;
+    }
+    .conten_sidebar a:hover {
+        background-color: rgb(7, 165, 149);
+    }
+    /* --------------------------------------------------Phần nọi dung chính-----------------------------*/
+    main {
+        font-size: 120%;
+        float: left;
+        width: 56%;
+        padding: 0 2% 2% 0.5%;
+        margin: 0 1% 1% 9%;
+    }
+    /* Top right Bot left */
+    /* --------------------------------------------------Phần chân trang Footer-----------------------------*/
+    footer a {
+        color: white;
+    }
+    footer img {
+        display: block;
+    }
+}
+
+
+/* --------------------------------------------------Hiển thị khi kích thước màn hình thay đổi (cho màn hình di động)-----------------------------*/
